@@ -190,10 +190,9 @@ three points you will focus on which are:
 ### Inspiration Gallery:
 
 Get inspired by these stunning to-do list app designs:
-
-- Image1: Stunning Todo List App Design: [https://cdn.dribbble.com/users/5126936/screenshots/12238011/web_1920\_\_\_1.png](https://cdn.dribbble.com/users/5126936/screenshots/12238011/web_1920___1.png)
-- Image2: Modern Todo List App Design: [https://cdn.dribbble.com/users/275567/screenshots/6576091/todoapp_4x.png](https://cdn.dribbble.com/users/275567/screenshots/6576091/todoapp_4x.png)
-- Image3: Minimalist Todo List App Design: [https://cdn.dribbble.com/users/2806924/screenshots/5642001/todo_app_4x.png](https://cdn.dribbble.com/users/2806924/screenshots/5642001/todo_app_4x.png)
+![Image1](https://cdn.dribbble.com/users/5126936/screenshots/12238011/web_1920___1.png)
+![Image2](https://cdn.dribbble.com/users/275567/screenshots/6576091/todoapp_4x.png)
+![Image3](https://cdn.dribbble.com/users/2806924/screenshots/5642001/todo_app_4x.png)
 
 Remember, there are no limits to your creativity! So, get coding, have fun, and build a to-do list app that reflects your self and work. excited to see what you can come up with!!
 
