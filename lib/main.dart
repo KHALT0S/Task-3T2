@@ -1,29 +1,19 @@
 import 'package:flutter/material.dart';
-// import './example/main.dart' as example;
+import 'package:todo_app/toDoApp/run.dart';
 
 void main() {
-  // example.main();
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      // Add MaterialApp here
       debugShowCheckedModeBanner: false,
-      title: 'Todo App',
-      home: Scaffold(
-        body: Center(
-          child: Text(
-            "Hello World",
-            style: const TextStyle().copyWith(
-              fontSize: 32,
-            ),
-          ),
-        ),
-      ),
+      home: const ToDoApp(),
     );
   }
 }
