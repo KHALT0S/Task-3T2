@@ -2,24 +2,29 @@ class TodoModel {
   final String title;
   final String description;
   final bool isCompleted;
-  final String isimportant;
+  final String isImportant;
+  final DateTime editedDate;
+
   const TodoModel({
     required this.title,
     this.description = '',
     this.isCompleted = false,
-    this.isimportant = 'normal',
+    this.isImportant = 'normal',
+    required this.editedDate,
   });
 
-  TodoModel updateTodo(
-      {String? title,
-      String? description,
-      bool? isCompleted,
-      String? isImportant}) {
+  TodoModel updateTodo({
+    String? title,
+    String? description,
+    bool? isCompleted,
+    String? isImportant,
+  }) {
     return TodoModel(
       title: title ?? this.title,
       description: description ?? this.description,
-      isimportant: isimportant,
       isCompleted: isCompleted ?? this.isCompleted,
+      isImportant: isImportant ?? this.isImportant,
+      editedDate: DateTime.now(),
     );
   }
 }

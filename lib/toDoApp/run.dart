@@ -15,7 +15,7 @@ void main() {
 }
 
 class ToDoApp extends StatelessWidget {
-  const ToDoApp({Key? key}) : super(key: key);
+  const ToDoApp({super.key});
 
   @override
   Widget build(BuildContext context) {
