@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, unused_import
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:todo_app/toDoApp/providers/todo_provider.dart';
@@ -8,11 +10,13 @@ class TodoBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final todoProvider = Provider.of<TodoProvider>(context);
+
     return Expanded(
       child: ListView.builder(
-        itemCount: _todoList.length,
+        itemCount: todoProvider.todos.length,
         itemBuilder: (context, index) {
-          final todo = _todoList[index];
+          final todo = todoProvider.todos[index];
           return Card(
             elevation: 3,
             shape: RoundedRectangleBorder(

@@ -4,25 +4,25 @@ import 'package:todo_app/toDoApp/providers/todo_provider.dart';
 import 'package:provider/provider.dart';
 
 void main() {
-  runApp(MultiProvider(
-    providers: [
-      ChangeNotifierProvider(
-        create: (_) => TodoProvider(),
-      )
-    ],
-    child: const ToDoApp(),
-  ));
+  runApp(const ToDoApp());
 }
 
 class ToDoApp extends StatelessWidget {
-  const ToDoApp({super.key});
+  const ToDoApp({Key? key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
-      theme: _getTheme(),
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(
+          create: (_) => TodoProvider(),
+        ),
+      ],
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: const HomeScreen(),
+        theme: _getTheme(),
+      ),
     );
   }
 
