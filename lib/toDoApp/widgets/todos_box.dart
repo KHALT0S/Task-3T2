@@ -17,7 +17,9 @@ class TodoBox extends StatelessWidget {
         itemCount: todoProvider.todos.length,
         itemBuilder: (context, index) {
           final todo = todoProvider.todos[index];
+          final boxColor = todoProvider.getBoxColor(todo.isImportant);
           return Card(
+            color: boxColor,
             elevation: 3,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(10),

@@ -2,14 +2,14 @@ class TodoModel {
   final String title;
   final String description;
   final bool isCompleted;
-  final String isImportant;
+  final int isImportant;
   final DateTime editedDate;
 
   const TodoModel({
     required this.title,
     this.description = '',
     this.isCompleted = false,
-    this.isImportant = 'normal',
+    this.isImportant = 1,
     required this.editedDate,
   });
 
@@ -23,7 +23,7 @@ class TodoModel {
       title: title ?? this.title,
       description: description ?? this.description,
       isCompleted: isCompleted ?? this.isCompleted,
-      isImportant: isImportant ?? this.isImportant,
+      isImportant: this.isImportant,
       editedDate: DateTime.now(),
     );
   }
